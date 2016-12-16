@@ -10,6 +10,9 @@ Supported IPv4 and IPv6 address.
 For more details, please visit:
 [http://www.ip2location.com/developers/c](http://www.ip2location.com/developers/c)
 
+## Monetizer Customisations
+![build_status](https://travis-ci.org/MonetizerDevTeam/IP2Location-C-Library.svg?branch=master)
+
 # Installation
 ###  Unix/Linux
     autoreconf -i -v --force
