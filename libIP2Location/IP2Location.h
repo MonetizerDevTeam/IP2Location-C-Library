@@ -132,6 +132,8 @@ typedef struct
 
 typedef struct
 {
+    uint32_t ipfrom;
+    uint32_t ipto;
     char *country_short;
     char *country_long;
     char *region;

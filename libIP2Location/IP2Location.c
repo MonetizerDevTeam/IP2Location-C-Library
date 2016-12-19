@@ -658,7 +658,10 @@ static IP2LocationRecord *IP2Location_get_ipv4_record(IP2Location *loc, char *ip
 
         if ((ipno >= ipfrom) && (ipno < ipto))
         {
-            return IP2Location_read_record(loc, baseaddr + (mid * dbcolumn * 4), mode);
+            IP2LocationRecord* record = IP2Location_read_record(loc, baseaddr + (mid * dbcolumn * 4), mode);
+            record->ipfrom = ipfrom;
+            record->ipto = ipto;
+            return record;
         }
         else
         {
