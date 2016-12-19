@@ -4,4 +4,4 @@ script:
   - ./configure
   - make
   - cd test
-  - ./test-IPLocation
+  - ./test-IP2Location
