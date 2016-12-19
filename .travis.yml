@@ -3,5 +3,7 @@ script:
   - autoreconf -i -v --force
   - ./configure
   - make
-  - cd test
+  - cd data
+  - perl ip-country.pl
+  - cd ../test
   - ./test-IP2Location
