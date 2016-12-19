@@ -1,1 +1,7 @@
 language: c
+script:
+  - autoreconf -i -v --force
+  - ./configure
+  - make
+  - cd test
+  - ./test-IPLocation
